@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DetailPro - Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/cartstyle.css' %}">
+    
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo"
+          ><i class="fas fa-car"></i>Detail<span>Pro</span></a
+        >
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <div class="icon-container">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="icon-count">1</span>
+          </div>
+          <div class="icon-container">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container breadcrumb-content">
+        <div class="breadcrumb-item"><a href="#">Home</a></div>
+        <div class="breadcrumb-divider">/</div>
+        <div class="breadcrumb-item">Shopping Cart</div>
+      </div>
+    </div>
+
+    <!-- Cart Page -->
+    <section class="cart-page">
+      <div class="container">
+        <h1 class="cart-title">Shopping Cart</h1>
+        <p class="cart-subtitle">1 item in your cart</p>
+
+        <div class="cart-divider"></div>
+
+        <div class="cart-container">
+          <div class="cart-items">
+            <div class="cart-item">
+              <div class="item-img">
+                <i class="fas fa-spray-can"></i>
+              </div>
+              <div class="item-details">
+                <h3 class="item-name">Ceramic Coating Spray</h3>
+                <p class="item-category">Exterior Care</p>
+                <div class="item-quantity">
+                  <button class="quantity-btn">-</button>
+                  <span class="quantity-value">1</span>
+                  <button class="quantity-btn">+</button>
+                </div>
+                <button class="remove-item">
+                  <i class="fas fa-trash-alt"></i> Remove
+                </button>
+              </div>
+              <div class="item-price">Rs. 1,599</div>
+            </div>
+
+            <div class="cart-divider"></div>
+          </div>
+
+          <div class="order-summary">
+            <h2 class="summary-title">Order Summary</h2>
+
+            <div class="summary-row">
+              <span class="summary-label">Subtotal</span>
+              <span class="summary-value">Rs. 1,599</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Shipping</span>
+              <span class="summary-value">Rs. 250</span>
+            </div>
+
+            <div class="summary-row total">
+              <span class="summary-label">Total</span>
+              <span class="summary-value">Rs. 1,849</span>
+            </div>
+
+            <a href="#" class="checkout-btn">Proceed to Checkout</a>
+            <a href="#" class="continue-btn">Continue Shopping</a>
+
+            <div class="cod-note">
+              <p><i class="fas fa-truck"></i> Cash on Delivery Available</p>
+              <p>Pay when your order arrives. Available across Pakistan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="#" class="footer-logo">Detail<span>Pro</span></a>
+            <p>
+              Premium car care and accessories for enthusiasts who demand
+              perfection. Professional-grade products delivered across Pakistan.
+            </p>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Premium Quality</li>
+              <li><i class="fas fa-check-circle"></i> Cash on Delivery</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Shop</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-blog"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@detailpro.pk</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+92 300 1234567</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Based in Pakistan</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 9am - 6pm</p>
+            <p>Saturday: 10am - 4pm</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2024 DetailPro. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+            <a href="#">Shipping Info</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

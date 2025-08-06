@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DetailPro | Premium Car Care Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="{% url 'home' %}" class="logo">Detail<span>Pro</span></a>
+                <ul class="nav-links">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'category' %}">Categories</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <i class="fas fa-search"></i>
+                    <a href="{% url 'cart' %}">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="{% url 'profile' %}">
+                    <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Car Care Products For Everyone</h1>
+                <p>
+                    Premium quality car care solutions to keep your vehicle looking its
+                    best, inside and out.
+                </p>
+                <div class="hero-buttons">
+                    <a href="{% url 'category' %}" class="btn">Shop Now</a>
+                    <a href="{% url 'about' %}" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop By Category</h2>
+                <p>
+                    Explore our comprehensive range of car care products designed to
+                    meet all your automotive detailing needs.
+                </p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Exterior Care</h3>
+                    <p>Cleaners, conditioners, and fresheners</p>
+                    <a href="{% url 'exterior' %}" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Interior Care</h3>
+                    <p>Cleaners, conditioners, and fresheners</p>
+                    <a href="#" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Fluids, filters, and engine care</p>
+                    <a href="#" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Gadgets, tools, and convenience items</p>
+                    <a href="#" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>
+                    Discover our top-rated car care essentials chosen by professionals
+                    and enthusiasts alike
+                </p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80"
+                            alt="Premium Carnauba Wax" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Carnauba Wax</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(124)</span>
+                        </div>
+                        <p class="product-desc">Long-lasting shine with UV protection</p>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80"
+                            alt="Interior Detailer" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Interior Detailer</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <p class="product-desc">All-in-one cleaner and protectant</p>
+                        <div class="product-price">
+                            <span class="current-price">$18.99</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1580274437635-89b8e17d6d5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80"
+                            alt="Wheel Cleaning Kit" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wheel Cleaning Kit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(56)</span>
+                        </div>
+                        <p class="product-desc">Complete solution for alloy wheels</p>
+                        <div class="product-price">
+                            <span class="current-price">$32.99</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80"
+                            alt="Premium Phone Mount" />
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Phone Mount</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p class="product-desc">Secure grip with wireless charging</p>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                            <span class="old-price">$39.99</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn">View All Products <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+                <p>
+                    Discover the DetailPro difference - quality, service, and expertise
+                    you can trust
+                </p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Premium Quality Only</h3>
+                    <p>We source only the best products for car enthusiasts</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery in Pakistan</h3>
+                    <p>Nationwide shipping to your doorstep</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Beginner Friendly</h3>
+                    <p>Easy-to-use products with detailed instructions</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cash on Delivery</h3>
+                    <p>Pay when your order arrives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get 10% off your first shine kit</h2>
+                <p>
+                    Join our community of car enthusiasts and get exclusive offers,
+                    detailing tips, and early access to new products.
+                </p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email address" required />
+                    <button type="submit" class="btn btn-secondary">
+                        Subscribe Now
+                    </button>
+                </form>
+                <p class="agree-text">
+                    By subscribing you agree to our privacy policy and connect to
+                    website updates from our company.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>DetailPro</h3>
+                    <p>
+                        Premium car care and accessories for enthusiasts who demand
+                        perfection. Professional-grade products delivered across Pakistan.
+                    </p>
+                    <p>Based in Pakistan</p>
+                    <p><strong>Premium Quality | Cash on Delivery</strong></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Connect</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@detailpro.pk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+92 300 1234567</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-hours">
+                    <h3>Business Hours</h3>
+                    <div class="hours-item">
+                        <span>Monday - Friday:</span>
+                        <span>8am - 4pm</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Saturday:</span>
+                        <span>10am - 4pm</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Sunday:</span>
+                        <span>Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    &copy; 2021 DetailPro. All rights reserved. |
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+                    <a href="#">Shipping Info</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener("DOMContentLoaded", function () {
+            // Add animation to benefit cards on scroll
+            const benefitCards = document.querySelectorAll(".benefit-card");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = "translateY(0)";
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            benefitCards.forEach((card) => {
+                card.style.opacity = 0;
+                card.style.transform = "translateY(20px)";
+                card.style.transition = "opacity 0.5s, transform 0.5s";
+                observer.observe(card);
+            });
+
+            // Newsletter form submission
+            const newsletterForm = document.querySelector(".subscribe-form");
+            if (newsletterForm) {
+                newsletterForm.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const emailInput = this.querySelector('input[type="email"]');
+                    if (emailInput.value) {
+                        alert("Thank you for subscribing to our newsletter!");
+                        emailInput.value = "";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DetailPro - Exterior Care</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/categories/exterior.css' %}" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo" tabindex="0" aria-label="DetailPro logo"
+        >Detail<span>Pro</span></a
+      >
+      <form class="search-bar" role="search" aria-label="Search products">
+        <input
+          type="text"
+          placeholder="Search products..."
+          aria-label="Search products"
+        />
+        <button type="submit" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <nav aria-label="Primary navigation">
+        <a href="#" tabindex="0">Home</a>
+        <a href="#" tabindex="0">Categories</a>
+        <a href="#" tabindex="0">Exterior Care</a>
+        <div class="icon-container" aria-label="Shopping cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="icon-count">3</span>
+        </div>
+        <div class="icon-container" aria-label="User account">
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Exterior Care</h1>
+      <p>Professional-grade products for your vehicle's exterior care</p>
+      <div class="breadcrumb">
+        <a href="#">Home</a>
+        <span>/</span>
+        <a href="#">Categories</a>
+        <span>/</span>
+        <span>Exterior Care</span>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="section-title">
+        <h2>Premium Exterior Care Products</h2>
+        <p>
+          Protect and enhance your vehicle's appearance with our
+          professional-grade exterior care solutions
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="sale-badge">SALE</div>
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1592840331052-16e15c2c6f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+              alt="Premium Car Shampoo"
+            />
+          </div>
+          <div class="product-content">
+            <div class="rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="rating-count">4.8 (124)</div>
+            </div>
+            <h3 class="product-name">Premium Car Shampoo</h3>
+            <p class="product-desc">
+              pH balanced formula for gentle yet effective cleaning
+            </p>
+            <div class="price-container">
+              <div class="current-price">Rs 1,299</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="sale-badge">SALE</div>
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+              alt="Ceramic Wax Protection"
+            />
+          </div>
+          <div class="product-content">
+            <div class="rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="rating-count">4.9 (87)</div>
+            </div>
+            <h3 class="product-name">Ceramic Wax Protection</h3>
+            <p class="product-desc">
+              Long-lasting protection with ceramic technology
+            </p>
+            <div class="price-container">
+              <div class="current-price">Rs 2,899</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="sale-badge">SALE</div>
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80"
+              alt="Tire Shine Spray"
+            />
+          </div>
+          <div class="product-content">
+            <div class="rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="rating-count">4.7 (156)</div>
+            </div>
+            <h3 class="product-name">Tire Shine Spray</h3>
+            <p class="product-desc">
+              Professional grade tire treatment for lasting shine
+            </p>
+            <div class="price-container">
+              <div class="current-price">Rs 899</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="sale-badge">SALE</div>
+          <div class="product-img">
+            <img
+              src="https://images.unsplash.com/photo-1603314585442-ee3b3c16fbcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Glass Cleaner Pro"
+            />
+          </div>
+          <div class="product-content">
+            <div class="rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="rating-count">4.6 (203)</div>
+            </div>
+            <h3 class="product-name">Glass Cleaner Pro</h3>
+            <p class="product-desc">
+              Streak-free formula for crystal clear windows
+            </p>
+            <div class="price-container">
+              <div class="current-price">Rs 749</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Get Exclusive Offers</h2>
+      <p>
+        Subscribe to our newsletter for the latest products, discounts, and car
+        care tips
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <section class="footer-section">
+          <h2 class="footer-logo">Detail<span>Pro</span></h2>
+          <p class="footer-description">
+            Premium car care and accessories for enthusiasts who demand
+            perfection. Professional-grade products delivered across Pakistan.
+          </p>
+          <div class="payment-badges">
+            <div class="payment-badge">SSL Secure</div>
+            <div class="payment-badge">Cash on Delivery</div>
+          </div>
+        </section>
+
+        <section class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-section footer-contact">
+          <h3>Connect</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@detailpro.pk</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+92 300 1234567</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Karachi, Pakistan</span>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        © 2024 DetailPro. All rights reserved.
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Info</a>
+      </div>
+    </footer>
+  </body>
+</html>

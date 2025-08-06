@@ -1,0 +1,356 @@
+{% load static %}
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DetailPro - Shop by Category</title>
+    <link rel="stylesheet" href="{% static 'css/categorystyle.css' %}">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo" tabindex="0" aria-label="DetailPro logo"
+        >Detail<span>Pro</span></a
+      >
+      <nav aria-label="Primary navigation">
+        <a href="#" tabindex="0">Home</a>
+        <a href="#" tabindex="0" aria-current="page">Categories</a>
+        <div class="icon-container" aria-label="Shopping cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="icon-count">3</span>
+        </div>
+        <div class="icon-container" aria-label="User account">
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section id="shop-category" aria-labelledby="shop-category-heading">
+        <h1 id="shop-category-heading">Shop by Category</h1>
+        <p class="description">
+          Everything you need to detail, protect, and accessorize your ride.
+        </p>
+
+        <div
+          class="filters-container"
+          role="region"
+          aria-label="Filter products by options"
+        >
+          <button
+            class="filter-btn"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="filter-price"
+            tabindex="0"
+          >
+            Price Range
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path d="M10 13l-5-5h10l-5 5z" />
+            </svg>
+          </button>
+          <button
+            class="filter-btn"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="filter-brand"
+            tabindex="0"
+          >
+            Brand
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path d="M10 13l-5-5h10l-5 5z" />
+            </svg>
+          </button>
+          <button
+            class="filter-btn"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="filter-type"
+            tabindex="0"
+          >
+            Type
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path d="M10 13l-5-5h10l-5 5z" />
+            </svg>
+          </button>
+          <button
+            class="filter-btn"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="filter-availability"
+            tabindex="0"
+          >
+            Availability
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path d="M10 13l-5-5h10l-5 5z" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="categories-grid"
+          role="list"
+          aria-label="Product categories"
+        >
+          <!-- Exterior Care Card -->
+          <article
+            class="category-card"
+            tabindex="0"
+            role="listitem"
+            aria-labelledby="cat-exterior-care"
+            aria-describedby="desc-exterior-care quality-exterior-care"
+          >
+            <div class="category-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Car exterior being detailed"
+                loading="lazy"
+              />
+              <div class="product-count" aria-label="25 products available">
+                25 Products
+              </div>
+            </div>
+            <div class="category-content">
+              <h2 id="cat-exterior-care">Exterior Care</h2>
+              <p id="desc-exterior-care" class="description">
+                Shampoos, sealants, wax, tyre cleaners
+              </p>
+              <span id="quality-exterior-care" class="quality"
+                >Premium Quality</span
+              >
+            </div>
+          </article>
+
+          <!-- Interior Detailing Card -->
+          <article
+            class="category-card"
+            tabindex="0"
+            role="listitem"
+            aria-labelledby="cat-interior-detailing"
+            aria-describedby="desc-interior-detailing quality-interior-detailing"
+          >
+            <div class="category-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Luxury car interior"
+                loading="lazy"
+              />
+              <div class="product-count" aria-label="14 products available">
+                14 Products
+              </div>
+            </div>
+            <div class="category-content">
+              <h2 id="cat-interior-detailing">Interior Detailing</h2>
+              <p id="desc-interior-detailing" class="description">
+                Polish, leather care, air fresheners
+              </p>
+              <span id="quality-interior-detailing" class="quality"
+                >Premium Quality</span
+              >
+            </div>
+          </article>
+
+          <!-- Care Kits Card -->
+          <article
+            class="category-card"
+            tabindex="0"
+            role="listitem"
+            aria-labelledby="cat-care-kits"
+            aria-describedby="desc-care-kits quality-care-kits"
+          >
+            <div class="category-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Car care kit products"
+                loading="lazy"
+              />
+              <div class="product-count" aria-label="12 products available">
+                12 Products
+              </div>
+            </div>
+            <div class="category-content">
+              <h2 id="cat-care-kits">Care Kits</h2>
+              <p id="desc-care-kits" class="description">
+                Curated kits for all types of users
+              </p>
+              <span id="quality-care-kits" class="quality"
+                >Premium Quality</span
+              >
+            </div>
+          </article>
+
+          <!-- Accessories Card -->
+          <article
+            class="category-card"
+            tabindex="0"
+            role="listitem"
+            aria-labelledby="cat-accessories"
+            aria-describedby="desc-accessories quality-accessories"
+          >
+            <div class="category-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1549399542-7e845fec9f3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Car accessories"
+                loading="lazy"
+              />
+              <div class="product-count" aria-label="28 products available">
+                28 Products
+              </div>
+            </div>
+            <div class="category-content">
+              <h2 id="cat-accessories">Accessories</h2>
+              <p id="desc-accessories" class="description">
+                Cables, organizers, mats, chargers, etc.
+              </p>
+              <span id="quality-accessories" class="quality"
+                >Premium Quality</span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div
+          class="bottom-cta"
+          role="region"
+          aria-label="Cannot find what you are looking for section"
+        >
+          <p>
+            Can't find what you're looking for?<br />Browse our complete
+            collection or get in touch with our detailing experts for
+            personalized recommendations.
+          </p>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn-primary"
+              aria-label="View All Products"
+            >
+              View All Products
+            </button>
+            <button
+              type="button"
+              class="btn-secondary"
+              aria-label="Contact Support"
+            >
+              Contact Support
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      role="contentinfo"
+      aria-label="Site footer with company info, quick links and contact details"
+    >
+      <div class="footer-inner">
+        <section class="footer-section" aria-labelledby="footer-about-title">
+          <h2 id="footer-about-title" class="footer-logo" tabindex="0">
+            Detail<span>Pro</span>
+          </h2>
+          <p class="footer-description" tabindex="0">
+            Premium car care and accessories for enthusiasts who demand
+            perfection. Professional-grade products delivered across Pakistan.
+          </p>
+          <div class="payment-badges" aria-label="Secure payment badges">
+            <div
+              class="payment-badge"
+              tabindex="0"
+              aria-label="Verified as SSL Secure"
+            >
+              SSL Secure
+            </div>
+            <div
+              class="payment-badge"
+              tabindex="0"
+              aria-label="Cash on Delivery available"
+            >
+              Cash on Delivery
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="footer-section footer-links"
+          aria-labelledby="footer-quicklinks-title"
+        >
+          <h3 id="footer-quicklinks-title">Quick Links</h3>
+          <ul>
+            <li><a href="#" tabindex="0">Home</a></li>
+            <li><a href="#" tabindex="0">Shop</a></li>
+            <li><a href="#" tabindex="0">About Us</a></li>
+            <li><a href="#" tabindex="0">Contact</a></li>
+            <li><a href="#" tabindex="0">Blog</a></li>
+            <li><a href="#" tabindex="0">FAQ</a></li>
+          </ul>
+        </section>
+
+        <section
+          class="footer-section footer-contact"
+          aria-labelledby="footer-contact-title"
+        >
+          <h3 id="footer-contact-title">Connect</h3>
+          <div class="contact-info">
+            <p tabindex="0">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@detailpro.pk">info@detailpro.pk</a>
+            </p>
+            <p tabindex="0">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+922100123457">+92 210 0123457</a>
+            </p>
+            <p tabindex="0">
+              <i class="fas fa-map-marker-alt"></i> Karachi, Pakistan
+            </p>
+            <div
+              class="social-icons"
+              role="list"
+              aria-label="Social media links"
+            >
+              <a href="#" role="listitem" aria-label="Facebook" tabindex="0">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" role="listitem" aria-label="Twitter" tabindex="0">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" role="listitem" aria-label="Instagram" tabindex="0">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer-bottom" tabindex="0">
+        © 2024 DetailPro. All rights reserved.
+        <a href="#" tabindex="0">Privacy Policy</a>
+        <a href="#" tabindex="0">Terms of Service</a>
+        <a href="#" tabindex="0">Shipping Info</a>
+      </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </body>
+</html>
