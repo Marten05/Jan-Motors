@@ -15,16 +15,16 @@
     <!-- Header -->
     <header>
       <div class="container header-container">
-        <a href="#" class="logo"
+        <a href="{% url 'home' %}" class="logo"
           ><i class="fas fa-car"></i>Detail<span>Pro</span></a
         >
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'category' %}">Shop</a></li>
+            <li><a href="{% url 'category' %}">Categories</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
         </nav>
         <div class="header-icons">

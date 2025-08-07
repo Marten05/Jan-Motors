@@ -10,15 +10,16 @@
   <body>
     <!-- Header -->
     <header>
-      <a href="#" class="logo" tabindex="0" aria-label="DetailPro logo"
+      <a href="{% url 'home' %}" class="logo" tabindex="0" aria-label="DetailPro logo"
         >Detail<span>Pro</span></a
       >
       <nav aria-label="Primary navigation">
-        <a href="#" tabindex="0">Home</a>
-        <a href="#" tabindex="0" aria-current="page">Categories</a>
+        <a href="{% url 'home' %}" tabindex="0">Home</a>
+        <a href="{% url 'category' %}" tabindex="0" aria-current="page">Categories</a>
         <div class="icon-container" aria-label="Shopping cart">
           <i class="fas fa-shopping-cart"></i>
           <span class="icon-count">3</span>
+          
         </div>
         <div class="icon-container" aria-label="User account">
           <i class="fas fa-user-circle"></i>
