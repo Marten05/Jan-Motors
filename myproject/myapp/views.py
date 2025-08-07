@@ -19,3 +19,12 @@ def profile(request):
 
 def exterior(request):
     return render(request, 'categories/exterior.html')
+
+def interior(request):
+    return render(request, 'categories/interior.html')
+
+def maintenance(request):
+    return render(request, 'categories/maintenance.html')
+
+def accessories(request):
+    return render(request, 'categories/accessories.html')

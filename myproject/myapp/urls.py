@@ -11,6 +11,9 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),  # Contact page
     path('profile/', views.profile, name='profile'),  # User profile page
     path('categories/exterior/', views.exterior, name='exterior'),  # Exterior category page
+    path('categories/interior/', views.interior, name='interior'),  # Interior category page
+    path('categories/maintenance/', views.maintenance, name='maintenance'),  # Maintenance category page
+    path('categories/accessories/', views.accessories, name='accessories'),  # accessories category page
 ]
 
 if settings.DEBUG:
